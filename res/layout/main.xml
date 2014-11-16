@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_instruction"
+            android:layout_above="@+id/layout_btn" android:layout_alignParentTop="true"/>
+    <RelativeLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibtn_turn_left" android:layout_alignTop="@+id/ibtn_forward"
+                android:layout_toLeftOf="@+id/ibtn_forward" android:layout_marginRight="34dp"
+                android:src="@drawable/routing_turn_left"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibtn_forward"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:src="@drawable/routing_forward"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibtn_turn_right"
+                android:layout_marginLeft="34dp" android:layout_alignTop="@+id/ibtn_forward"
+                android:layout_toRightOf="@+id/ibtn_forward" android:src="@drawable/routing_turn_right"/>
+    </RelativeLayout>
+</RelativeLayout>
+
